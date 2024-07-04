@@ -23,4 +23,7 @@ while True:
     else:
         print("That is not a valid entry. Please choose either 3 or 6 holes.")
 
-print(f"Good game, {name}! Your total score was: {totalScore:+}")
+if totalScore != 0:
+    print(f"Good game, {name}! Your total score was: {totalScore:+}")
+else:
+    print(f"Good game, {name}! Your total score was: {totalScore}")
