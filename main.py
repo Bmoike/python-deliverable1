@@ -4,7 +4,7 @@
 name = input("Welcome to GC Mini golf! What is your name? ")
 numOfPutts = 0
 totalScore = 0
-par = 3
+par = [3, 3, 3, 3, 3, 3]
 
 print(f"Hi, {name}!", end=" ")
 
@@ -18,7 +18,7 @@ while True:
         for x in range(numOfHoles):
 
             numOfPutts = int(input(f"How many putts for hole {x+1}? (par is 3) "))
-            totalScore += numOfPutts - par
+            totalScore += numOfPutts - par[x]
         break
     else:
         print("That is not a valid entry. Please choose either 3 or 6 holes.")
